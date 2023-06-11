@@ -3,6 +3,8 @@ const express = require("express");
 const router = express.Router();
 const controller = require("../controllers/controller");
 
+router.get("/", controller.InitPage);
+
 router.get("/getAllObjects", controller.getAllObjects);
 
 router.get("/getOne", controller.getOneObject);
